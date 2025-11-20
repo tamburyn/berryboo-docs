@@ -249,6 +249,13 @@ button[aria-label="Change language"],
   display: none !important;
 }
 
+/* Hide social links container */
+.VPSocialLinks,
+.VPNavBarSocialLinks,
+.social-links {
+  display: none !important;
+}
+
 /* Buttons */
 .vp-button {
   background-color: var(--vp-c-brand);
