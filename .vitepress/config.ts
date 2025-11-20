@@ -153,30 +153,45 @@ export default defineConfig({
       ]
       
       // Check for documentation pages first
-      const docPages = [
-        '/start-here', '/system-overview', '/database-schema', '/multi-tenant',
-        '/mcp-integration', '/mcp-integration-guide', '/mcp-naming-structure',
-        '/agents-master', '/agents-specialist-teams', '/agents-specialized',
-        '/cli-reference', '/development-guide', '/docker'
-      ]
+      // Use startsWith for better matching (handles /start-here.html, /start-here/, etc.)
+      const isDocPage = path.startsWith('/start-here') || 
+                       path.startsWith('/system-overview') ||
+                       path.startsWith('/database-schema') ||
+                       path.startsWith('/multi-tenant') ||
+                       path.startsWith('/mcp-integration') ||
+                       path.startsWith('/mcp-integration-guide') ||
+                       path.startsWith('/mcp-naming-structure') ||
+                       path.startsWith('/agents-master') ||
+                       path.startsWith('/agents-specialist-teams') ||
+                       path.startsWith('/agents-specialized') ||
+                       path.startsWith('/cli-reference') ||
+                       path.startsWith('/development-guide') ||
+                       path.startsWith('/docker')
       
-      const plDocPages = [
-        '/pl/start-here', '/pl/system-overview', '/pl/database-schema', '/pl/multi-tenant',
-        '/pl/mcp-integration', '/pl/mcp-integration-guide', '/pl/mcp-naming-structure',
-        '/pl/agents-master', '/pl/agents-specialist-teams', '/pl/agents-specialized',
-        '/pl/cli-reference', '/pl/development-guide', '/pl/docker'
-      ]
+      const isPlDocPage = path.startsWith('/pl/start-here') ||
+                          path.startsWith('/pl/system-overview') ||
+                          path.startsWith('/pl/database-schema') ||
+                          path.startsWith('/pl/multi-tenant') ||
+                          path.startsWith('/pl/mcp-integration') ||
+                          path.startsWith('/pl/mcp-integration-guide') ||
+                          path.startsWith('/pl/mcp-naming-structure') ||
+                          path.startsWith('/pl/agents-master') ||
+                          path.startsWith('/pl/agents-specialist-teams') ||
+                          path.startsWith('/pl/agents-specialized') ||
+                          path.startsWith('/pl/cli-reference') ||
+                          path.startsWith('/pl/development-guide') ||
+                          path.startsWith('/pl/docker')
       
-      if (docPages.includes(path)) {
-        return docSidebar
-      }
-      
-      if (plDocPages.includes(path)) {
+      if (isPlDocPage) {
         return plDocSidebar
       }
       
+      if (isDocPage) {
+        return docSidebar
+      }
+      
       // Home pages - Getting Started section
-      if (path === '/' || path === '/index.html') {
+      if (path === '/' || path === '/index' || path === '/index.html') {
         return [
           {
             text: 'Getting Started',
@@ -189,7 +204,7 @@ export default defineConfig({
         ]
       }
       
-      if (path === '/pl/' || path === '/pl/index.html') {
+      if (path === '/pl' || path === '/pl/' || path === '/pl/index' || path === '/pl/index.html') {
         return [
           {
             text: 'Pierwsze kroki',
