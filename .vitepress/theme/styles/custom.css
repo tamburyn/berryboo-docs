@@ -16,10 +16,26 @@
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-/* Main content area */
+/* Main content area - wider with less margin */
 .vp-doc {
-  max-width: 900px;
-  padding: 32px 48px;
+  max-width: 1200px;
+  padding: 32px 64px;
+  margin: 0 auto;
+}
+
+/* Reduce sidebar width to give more space to content */
+.vp-sidebar {
+  width: 280px;
+}
+
+/* Make main container wider */
+.vp-page {
+  max-width: 100%;
+}
+
+/* Content wrapper */
+.main {
+  max-width: 100%;
 }
 
 /* Headings */
@@ -146,6 +162,7 @@
 .vp-sidebar {
   background-color: var(--vp-c-bg-alt);
   border-right: 1px solid var(--vp-c-border);
+  width: 280px;
 }
 
 .vp-sidebar-item {
@@ -162,6 +179,46 @@
 .vp-sidebar-item.active {
   background-color: var(--vp-c-bg-soft);
   color: var(--vp-c-brand);
+}
+
+/* Hide right sidebar TOC - we want it in left sidebar */
+.vp-doc .VPDocOutline {
+  display: none;
+}
+
+/* Ensure outline appears in left sidebar */
+.vp-sidebar .VPDocOutline {
+  display: block;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--vp-c-border);
+}
+
+.vp-sidebar .VPDocOutline .outline-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--vp-c-text-1);
+}
+
+.vp-sidebar .VPDocOutline .outline-item {
+  padding: 4px 0;
+  font-size: 13px;
+}
+
+.vp-sidebar .VPDocOutline .outline-item a {
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.vp-sidebar .VPDocOutline .outline-item a:hover {
+  color: var(--vp-c-brand);
+}
+
+.vp-sidebar .VPDocOutline .outline-item.active > a {
+  color: var(--vp-c-brand);
+  font-weight: 500;
 }
 
 /* Navbar */
@@ -227,10 +284,20 @@
   color: white;
 }
 
+/* Wider layout adjustments */
+.vp-layout {
+  max-width: 100%;
+}
+
+.vp-content {
+  max-width: 100%;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .vp-doc {
     padding: 24px 16px;
+    max-width: 100%;
   }
   
   .vp-doc h1 {
@@ -239,5 +306,9 @@
   
   .vp-doc h2 {
     font-size: 24px;
+  }
+  
+  .vp-sidebar {
+    width: 100%;
   }
 }
