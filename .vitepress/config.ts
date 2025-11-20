@@ -13,12 +13,14 @@ export default defineConfig({
   // Ignore dead links for now (some files don't exist yet)
   ignoreDeadLinks: true,
 
+  // Source directory - English content (root locale)
+  srcDir: './en',
+
   // Internationalization - proper setup for bilingual support
   locales: {
     root: {
       label: 'English',
       lang: 'en',
-      srcDir: './en',
       themeConfig: {
         // Navigation - expanded with all sections
         nav: [
