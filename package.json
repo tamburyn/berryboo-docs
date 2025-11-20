@@ -4,7 +4,9 @@
   "description": "BerryBoo AI Documentation - Bilingual Knowledge Base",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/copy-polish.js",
     "dev": "vitepress dev --base /",
+    "prebuild": "node scripts/copy-polish.js",
     "build": "VITEPRESS_BASE=/berryboo-docs/ vitepress build",
     "build:all": "node scripts/build-all.js",
     "preview": "vitepress preview"
