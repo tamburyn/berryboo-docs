@@ -54,6 +54,7 @@ export default defineConfig({
     
     // Sidebar configuration - comprehensive for all pages
     sidebar: {
+      // Home page - Getting Started section
       '/': [
         {
           text: 'Getting Started',
@@ -64,6 +65,7 @@ export default defineConfig({
           ]
         }
       ],
+      // Documentation pages - full documentation navigation
       '/start-here': [
         {
           text: 'Understanding the System',
