@@ -253,15 +253,19 @@ export default defineConfig({
       ],
       '/mcp-integration-guide': [
         {
-          text: 'MCP Integration',
+          text: 'Understanding the System',
           items: [
-            { text: 'MCP Integration', link: '/mcp-integration' },
-            { text: 'MCP Integration Guide', link: '/mcp-integration-guide' },
-            { text: 'MCP Naming Structure', link: '/mcp-naming-structure' }
+            { text: 'Start Here', link: '/start-here' },
+            { text: 'System Overview', link: '/system-overview' }
           ]
-        }
-      ],
-      '/mcp-naming-structure': [
+        },
+        {
+          text: 'Core Infrastructure',
+          items: [
+            { text: 'Database Schema', link: '/database-schema' },
+            { text: 'Multi-Tenant Architecture', link: '/multi-tenant' }
+          ]
+        },
         {
           text: 'MCP Integration',
           items: [
@@ -269,9 +273,7 @@ export default defineConfig({
             { text: 'MCP Integration Guide', link: '/mcp-integration-guide' },
             { text: 'MCP Naming Structure', link: '/mcp-naming-structure' }
           ]
-        }
-      ],
-      '/agents-master': [
+        },
         {
           text: 'AI Agents Architecture',
           items: [
@@ -281,34 +283,205 @@ export default defineConfig({
           ]
         },
         {
+          text: 'Development & Usage',
+          items: [
+            { text: 'CLI Reference', link: '/cli-reference' },
+            { text: 'Development Guide', link: '/development-guide' },
+            { text: 'Docker', link: '/docker' }
+          ]
+        }
+      ],
+      '/mcp-naming-structure': [
+        {
           text: 'Understanding the System',
           items: [
             { text: 'Start Here', link: '/start-here' },
             { text: 'System Overview', link: '/system-overview' }
           ]
-        }
-      ],
-      '/agents-specialist-teams': [
+        },
+        {
+          text: 'Core Infrastructure',
+          items: [
+            { text: 'Database Schema', link: '/database-schema' },
+            { text: 'Multi-Tenant Architecture', link: '/multi-tenant' }
+          ]
+        },
+        {
+          text: 'MCP Integration',
+          items: [
+            { text: 'MCP Integration', link: '/mcp-integration' },
+            { text: 'MCP Integration Guide', link: '/mcp-integration-guide' },
+            { text: 'MCP Naming Structure', link: '/mcp-naming-structure' }
+          ]
+        },
         {
           text: 'AI Agents Architecture',
           items: [
             { text: 'Master Agents', link: '/agents-master' },
             { text: 'Specialist Teams', link: '/agents-specialist-teams' },
             { text: 'Specialized Agents', link: '/agents-specialized' }
+          ]
+        },
+        {
+          text: 'Development & Usage',
+          items: [
+            { text: 'CLI Reference', link: '/cli-reference' },
+            { text: 'Development Guide', link: '/development-guide' },
+            { text: 'Docker', link: '/docker' }
+          ]
+        }
+      ],
+      '/agents-master': [
+        {
+          text: 'Understanding the System',
+          items: [
+            { text: 'Start Here', link: '/start-here' },
+            { text: 'System Overview', link: '/system-overview' }
+          ]
+        },
+        {
+          text: 'Core Infrastructure',
+          items: [
+            { text: 'Database Schema', link: '/database-schema' },
+            { text: 'Multi-Tenant Architecture', link: '/multi-tenant' }
+          ]
+        },
+        {
+          text: 'MCP Integration',
+          items: [
+            { text: 'MCP Integration', link: '/mcp-integration' },
+            { text: 'MCP Integration Guide', link: '/mcp-integration-guide' },
+            { text: 'MCP Naming Structure', link: '/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'AI Agents Architecture',
+          items: [
+            { text: 'Master Agents', link: '/agents-master' },
+            { text: 'Specialist Teams', link: '/agents-specialist-teams' },
+            { text: 'Specialized Agents', link: '/agents-specialized' }
+          ]
+        },
+        {
+          text: 'Development & Usage',
+          items: [
+            { text: 'CLI Reference', link: '/cli-reference' },
+            { text: 'Development Guide', link: '/development-guide' },
+            { text: 'Docker', link: '/docker' }
+          ]
+        }
+      ],
+      '/agents-specialist-teams': [
+        {
+          text: 'Understanding the System',
+          items: [
+            { text: 'Start Here', link: '/start-here' },
+            { text: 'System Overview', link: '/system-overview' }
+          ]
+        },
+        {
+          text: 'Core Infrastructure',
+          items: [
+            { text: 'Database Schema', link: '/database-schema' },
+            { text: 'Multi-Tenant Architecture', link: '/multi-tenant' }
+          ]
+        },
+        {
+          text: 'MCP Integration',
+          items: [
+            { text: 'MCP Integration', link: '/mcp-integration' },
+            { text: 'MCP Integration Guide', link: '/mcp-integration-guide' },
+            { text: 'MCP Naming Structure', link: '/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'AI Agents Architecture',
+          items: [
+            { text: 'Master Agents', link: '/agents-master' },
+            { text: 'Specialist Teams', link: '/agents-specialist-teams' },
+            { text: 'Specialized Agents', link: '/agents-specialized' }
+          ]
+        },
+        {
+          text: 'Development & Usage',
+          items: [
+            { text: 'CLI Reference', link: '/cli-reference' },
+            { text: 'Development Guide', link: '/development-guide' },
+            { text: 'Docker', link: '/docker' }
           ]
         }
       ],
       '/agents-specialized': [
         {
+          text: 'Understanding the System',
+          items: [
+            { text: 'Start Here', link: '/start-here' },
+            { text: 'System Overview', link: '/system-overview' }
+          ]
+        },
+        {
+          text: 'Core Infrastructure',
+          items: [
+            { text: 'Database Schema', link: '/database-schema' },
+            { text: 'Multi-Tenant Architecture', link: '/multi-tenant' }
+          ]
+        },
+        {
+          text: 'MCP Integration',
+          items: [
+            { text: 'MCP Integration', link: '/mcp-integration' },
+            { text: 'MCP Integration Guide', link: '/mcp-integration-guide' },
+            { text: 'MCP Naming Structure', link: '/mcp-naming-structure' }
+          ]
+        },
+        {
           text: 'AI Agents Architecture',
           items: [
             { text: 'Master Agents', link: '/agents-master' },
             { text: 'Specialist Teams', link: '/agents-specialist-teams' },
             { text: 'Specialized Agents', link: '/agents-specialized' }
           ]
+        },
+        {
+          text: 'Development & Usage',
+          items: [
+            { text: 'CLI Reference', link: '/cli-reference' },
+            { text: 'Development Guide', link: '/development-guide' },
+            { text: 'Docker', link: '/docker' }
+          ]
         }
       ],
       '/cli-reference': [
+        {
+          text: 'Understanding the System',
+          items: [
+            { text: 'Start Here', link: '/start-here' },
+            { text: 'System Overview', link: '/system-overview' }
+          ]
+        },
+        {
+          text: 'Core Infrastructure',
+          items: [
+            { text: 'Database Schema', link: '/database-schema' },
+            { text: 'Multi-Tenant Architecture', link: '/multi-tenant' }
+          ]
+        },
+        {
+          text: 'MCP Integration',
+          items: [
+            { text: 'MCP Integration', link: '/mcp-integration' },
+            { text: 'MCP Integration Guide', link: '/mcp-integration-guide' },
+            { text: 'MCP Naming Structure', link: '/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'AI Agents Architecture',
+          items: [
+            { text: 'Master Agents', link: '/agents-master' },
+            { text: 'Specialist Teams', link: '/agents-specialist-teams' },
+            { text: 'Specialized Agents', link: '/agents-specialized' }
+          ]
+        },
         {
           text: 'Development & Usage',
           items: [
@@ -320,6 +493,36 @@ export default defineConfig({
       ],
       '/development-guide': [
         {
+          text: 'Understanding the System',
+          items: [
+            { text: 'Start Here', link: '/start-here' },
+            { text: 'System Overview', link: '/system-overview' }
+          ]
+        },
+        {
+          text: 'Core Infrastructure',
+          items: [
+            { text: 'Database Schema', link: '/database-schema' },
+            { text: 'Multi-Tenant Architecture', link: '/multi-tenant' }
+          ]
+        },
+        {
+          text: 'MCP Integration',
+          items: [
+            { text: 'MCP Integration', link: '/mcp-integration' },
+            { text: 'MCP Integration Guide', link: '/mcp-integration-guide' },
+            { text: 'MCP Naming Structure', link: '/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'AI Agents Architecture',
+          items: [
+            { text: 'Master Agents', link: '/agents-master' },
+            { text: 'Specialist Teams', link: '/agents-specialist-teams' },
+            { text: 'Specialized Agents', link: '/agents-specialized' }
+          ]
+        },
+        {
           text: 'Development & Usage',
           items: [
             { text: 'CLI Reference', link: '/cli-reference' },
@@ -329,6 +532,36 @@ export default defineConfig({
         }
       ],
       '/docker': [
+        {
+          text: 'Understanding the System',
+          items: [
+            { text: 'Start Here', link: '/start-here' },
+            { text: 'System Overview', link: '/system-overview' }
+          ]
+        },
+        {
+          text: 'Core Infrastructure',
+          items: [
+            { text: 'Database Schema', link: '/database-schema' },
+            { text: 'Multi-Tenant Architecture', link: '/multi-tenant' }
+          ]
+        },
+        {
+          text: 'MCP Integration',
+          items: [
+            { text: 'MCP Integration', link: '/mcp-integration' },
+            { text: 'MCP Integration Guide', link: '/mcp-integration-guide' },
+            { text: 'MCP Naming Structure', link: '/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'AI Agents Architecture',
+          items: [
+            { text: 'Master Agents', link: '/agents-master' },
+            { text: 'Specialist Teams', link: '/agents-specialist-teams' },
+            { text: 'Specialized Agents', link: '/agents-specialized' }
+          ]
+        },
         {
           text: 'Development & Usage',
           items: [
@@ -350,6 +583,439 @@ export default defineConfig({
         }
       ],
       '/pl/start-here': [
+        {
+          text: 'Zrozumienie systemu',
+          items: [
+            { text: 'Zacznij tutaj', link: '/pl/start-here' },
+            { text: 'Przegląd systemu', link: '/pl/system-overview' }
+          ]
+        },
+        {
+          text: 'Infrastruktura podstawowa',
+          items: [
+            { text: 'Schemat bazy danych', link: '/pl/database-schema' },
+            { text: 'Architektura wielodostępowa', link: '/pl/multi-tenant' }
+          ]
+        },
+        {
+          text: 'Integracja MCP',
+          items: [
+            { text: 'Integracja MCP', link: '/pl/mcp-integration' },
+            { text: 'Przewodnik integracji MCP', link: '/pl/mcp-integration-guide' },
+            { text: 'Struktura nazewnictwa MCP', link: '/pl/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'Architektura agentów AI',
+          items: [
+            { text: 'Agenci główni', link: '/pl/agents-master' },
+            { text: 'Zespoły specjalistów', link: '/pl/agents-specialist-teams' },
+            { text: 'Agenci wyspecjalizowani', link: '/pl/agents-specialized' }
+          ]
+        },
+        {
+          text: 'Rozwój i użycie',
+          items: [
+            { text: 'Referencja CLI', link: '/pl/cli-reference' },
+            { text: 'Przewodnik rozwoju', link: '/pl/development-guide' },
+            { text: 'Docker', link: '/pl/docker' }
+          ]
+        }
+      ],
+      '/pl/system-overview': [
+        {
+          text: 'Zrozumienie systemu',
+          items: [
+            { text: 'Zacznij tutaj', link: '/pl/start-here' },
+            { text: 'Przegląd systemu', link: '/pl/system-overview' }
+          ]
+        },
+        {
+          text: 'Infrastruktura podstawowa',
+          items: [
+            { text: 'Schemat bazy danych', link: '/pl/database-schema' },
+            { text: 'Architektura wielodostępowa', link: '/pl/multi-tenant' }
+          ]
+        },
+        {
+          text: 'Integracja MCP',
+          items: [
+            { text: 'Integracja MCP', link: '/pl/mcp-integration' },
+            { text: 'Przewodnik integracji MCP', link: '/pl/mcp-integration-guide' },
+            { text: 'Struktura nazewnictwa MCP', link: '/pl/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'Architektura agentów AI',
+          items: [
+            { text: 'Agenci główni', link: '/pl/agents-master' },
+            { text: 'Zespoły specjalistów', link: '/pl/agents-specialist-teams' },
+            { text: 'Agenci wyspecjalizowani', link: '/pl/agents-specialized' }
+          ]
+        },
+        {
+          text: 'Rozwój i użycie',
+          items: [
+            { text: 'Referencja CLI', link: '/pl/cli-reference' },
+            { text: 'Przewodnik rozwoju', link: '/pl/development-guide' },
+            { text: 'Docker', link: '/pl/docker' }
+          ]
+        }
+      ],
+      '/pl/database-schema': [
+        {
+          text: 'Infrastruktura podstawowa',
+          items: [
+            { text: 'Schemat bazy danych', link: '/pl/database-schema' },
+            { text: 'Architektura wielodostępowa', link: '/pl/multi-tenant' }
+          ]
+        },
+        {
+          text: 'Zrozumienie systemu',
+          items: [
+            { text: 'Zacznij tutaj', link: '/pl/start-here' },
+            { text: 'Przegląd systemu', link: '/pl/system-overview' }
+          ]
+        },
+        {
+          text: 'Integracja MCP',
+          items: [
+            { text: 'Integracja MCP', link: '/pl/mcp-integration' },
+            { text: 'Przewodnik integracji MCP', link: '/pl/mcp-integration-guide' },
+            { text: 'Struktura nazewnictwa MCP', link: '/pl/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'Architektura agentów AI',
+          items: [
+            { text: 'Agenci główni', link: '/pl/agents-master' },
+            { text: 'Zespoły specjalistów', link: '/pl/agents-specialist-teams' },
+            { text: 'Agenci wyspecjalizowani', link: '/pl/agents-specialized' }
+          ]
+        }
+      ],
+      '/pl/multi-tenant': [
+        {
+          text: 'Infrastruktura podstawowa',
+          items: [
+            { text: 'Schemat bazy danych', link: '/pl/database-schema' },
+            { text: 'Architektura wielodostępowa', link: '/pl/multi-tenant' }
+          ]
+        },
+        {
+          text: 'Zrozumienie systemu',
+          items: [
+            { text: 'Zacznij tutaj', link: '/pl/start-here' },
+            { text: 'Przegląd systemu', link: '/pl/system-overview' }
+          ]
+        }
+      ],
+      '/pl/mcp-integration': [
+        {
+          text: 'Integracja MCP',
+          items: [
+            { text: 'Integracja MCP', link: '/pl/mcp-integration' },
+            { text: 'Przewodnik integracji MCP', link: '/pl/mcp-integration-guide' },
+            { text: 'Struktura nazewnictwa MCP', link: '/pl/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'Zrozumienie systemu',
+          items: [
+            { text: 'Zacznij tutaj', link: '/pl/start-here' },
+            { text: 'Przegląd systemu', link: '/pl/system-overview' }
+          ]
+        },
+        {
+          text: 'Architektura agentów AI',
+          items: [
+            { text: 'Agenci główni', link: '/pl/agents-master' },
+            { text: 'Zespoły specjalistów', link: '/pl/agents-specialist-teams' },
+            { text: 'Agenci wyspecjalizowani', link: '/pl/agents-specialized' }
+          ]
+        }
+      ],
+      '/pl/mcp-integration-guide': [
+        {
+          text: 'Zrozumienie systemu',
+          items: [
+            { text: 'Zacznij tutaj', link: '/pl/start-here' },
+            { text: 'Przegląd systemu', link: '/pl/system-overview' }
+          ]
+        },
+        {
+          text: 'Infrastruktura podstawowa',
+          items: [
+            { text: 'Schemat bazy danych', link: '/pl/database-schema' },
+            { text: 'Architektura wielodostępowa', link: '/pl/multi-tenant' }
+          ]
+        },
+        {
+          text: 'Integracja MCP',
+          items: [
+            { text: 'Integracja MCP', link: '/pl/mcp-integration' },
+            { text: 'Przewodnik integracji MCP', link: '/pl/mcp-integration-guide' },
+            { text: 'Struktura nazewnictwa MCP', link: '/pl/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'Architektura agentów AI',
+          items: [
+            { text: 'Agenci główni', link: '/pl/agents-master' },
+            { text: 'Zespoły specjalistów', link: '/pl/agents-specialist-teams' },
+            { text: 'Agenci wyspecjalizowani', link: '/pl/agents-specialized' }
+          ]
+        },
+        {
+          text: 'Rozwój i użycie',
+          items: [
+            { text: 'Referencja CLI', link: '/pl/cli-reference' },
+            { text: 'Przewodnik rozwoju', link: '/pl/development-guide' },
+            { text: 'Docker', link: '/pl/docker' }
+          ]
+        }
+      ],
+      '/pl/mcp-naming-structure': [
+        {
+          text: 'Zrozumienie systemu',
+          items: [
+            { text: 'Zacznij tutaj', link: '/pl/start-here' },
+            { text: 'Przegląd systemu', link: '/pl/system-overview' }
+          ]
+        },
+        {
+          text: 'Infrastruktura podstawowa',
+          items: [
+            { text: 'Schemat bazy danych', link: '/pl/database-schema' },
+            { text: 'Architektura wielodostępowa', link: '/pl/multi-tenant' }
+          ]
+        },
+        {
+          text: 'Integracja MCP',
+          items: [
+            { text: 'Integracja MCP', link: '/pl/mcp-integration' },
+            { text: 'Przewodnik integracji MCP', link: '/pl/mcp-integration-guide' },
+            { text: 'Struktura nazewnictwa MCP', link: '/pl/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'Architektura agentów AI',
+          items: [
+            { text: 'Agenci główni', link: '/pl/agents-master' },
+            { text: 'Zespoły specjalistów', link: '/pl/agents-specialist-teams' },
+            { text: 'Agenci wyspecjalizowani', link: '/pl/agents-specialized' }
+          ]
+        },
+        {
+          text: 'Rozwój i użycie',
+          items: [
+            { text: 'Referencja CLI', link: '/pl/cli-reference' },
+            { text: 'Przewodnik rozwoju', link: '/pl/development-guide' },
+            { text: 'Docker', link: '/pl/docker' }
+          ]
+        }
+      ],
+      '/pl/agents-master': [
+        {
+          text: 'Zrozumienie systemu',
+          items: [
+            { text: 'Zacznij tutaj', link: '/pl/start-here' },
+            { text: 'Przegląd systemu', link: '/pl/system-overview' }
+          ]
+        },
+        {
+          text: 'Infrastruktura podstawowa',
+          items: [
+            { text: 'Schemat bazy danych', link: '/pl/database-schema' },
+            { text: 'Architektura wielodostępowa', link: '/pl/multi-tenant' }
+          ]
+        },
+        {
+          text: 'Integracja MCP',
+          items: [
+            { text: 'Integracja MCP', link: '/pl/mcp-integration' },
+            { text: 'Przewodnik integracji MCP', link: '/pl/mcp-integration-guide' },
+            { text: 'Struktura nazewnictwa MCP', link: '/pl/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'Architektura agentów AI',
+          items: [
+            { text: 'Agenci główni', link: '/pl/agents-master' },
+            { text: 'Zespoły specjalistów', link: '/pl/agents-specialist-teams' },
+            { text: 'Agenci wyspecjalizowani', link: '/pl/agents-specialized' }
+          ]
+        },
+        {
+          text: 'Rozwój i użycie',
+          items: [
+            { text: 'Referencja CLI', link: '/pl/cli-reference' },
+            { text: 'Przewodnik rozwoju', link: '/pl/development-guide' },
+            { text: 'Docker', link: '/pl/docker' }
+          ]
+        }
+      ],
+      '/pl/agents-specialist-teams': [
+        {
+          text: 'Zrozumienie systemu',
+          items: [
+            { text: 'Zacznij tutaj', link: '/pl/start-here' },
+            { text: 'Przegląd systemu', link: '/pl/system-overview' }
+          ]
+        },
+        {
+          text: 'Infrastruktura podstawowa',
+          items: [
+            { text: 'Schemat bazy danych', link: '/pl/database-schema' },
+            { text: 'Architektura wielodostępowa', link: '/pl/multi-tenant' }
+          ]
+        },
+        {
+          text: 'Integracja MCP',
+          items: [
+            { text: 'Integracja MCP', link: '/pl/mcp-integration' },
+            { text: 'Przewodnik integracji MCP', link: '/pl/mcp-integration-guide' },
+            { text: 'Struktura nazewnictwa MCP', link: '/pl/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'Architektura agentów AI',
+          items: [
+            { text: 'Agenci główni', link: '/pl/agents-master' },
+            { text: 'Zespoły specjalistów', link: '/pl/agents-specialist-teams' },
+            { text: 'Agenci wyspecjalizowani', link: '/pl/agents-specialized' }
+          ]
+        },
+        {
+          text: 'Rozwój i użycie',
+          items: [
+            { text: 'Referencja CLI', link: '/pl/cli-reference' },
+            { text: 'Przewodnik rozwoju', link: '/pl/development-guide' },
+            { text: 'Docker', link: '/pl/docker' }
+          ]
+        }
+      ],
+      '/pl/agents-specialized': [
+        {
+          text: 'Zrozumienie systemu',
+          items: [
+            { text: 'Zacznij tutaj', link: '/pl/start-here' },
+            { text: 'Przegląd systemu', link: '/pl/system-overview' }
+          ]
+        },
+        {
+          text: 'Infrastruktura podstawowa',
+          items: [
+            { text: 'Schemat bazy danych', link: '/pl/database-schema' },
+            { text: 'Architektura wielodostępowa', link: '/pl/multi-tenant' }
+          ]
+        },
+        {
+          text: 'Integracja MCP',
+          items: [
+            { text: 'Integracja MCP', link: '/pl/mcp-integration' },
+            { text: 'Przewodnik integracji MCP', link: '/pl/mcp-integration-guide' },
+            { text: 'Struktura nazewnictwa MCP', link: '/pl/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'Architektura agentów AI',
+          items: [
+            { text: 'Agenci główni', link: '/pl/agents-master' },
+            { text: 'Zespoły specjalistów', link: '/pl/agents-specialist-teams' },
+            { text: 'Agenci wyspecjalizowani', link: '/pl/agents-specialized' }
+          ]
+        },
+        {
+          text: 'Rozwój i użycie',
+          items: [
+            { text: 'Referencja CLI', link: '/pl/cli-reference' },
+            { text: 'Przewodnik rozwoju', link: '/pl/development-guide' },
+            { text: 'Docker', link: '/pl/docker' }
+          ]
+        }
+      ],
+      '/pl/cli-reference': [
+        {
+          text: 'Zrozumienie systemu',
+          items: [
+            { text: 'Zacznij tutaj', link: '/pl/start-here' },
+            { text: 'Przegląd systemu', link: '/pl/system-overview' }
+          ]
+        },
+        {
+          text: 'Infrastruktura podstawowa',
+          items: [
+            { text: 'Schemat bazy danych', link: '/pl/database-schema' },
+            { text: 'Architektura wielodostępowa', link: '/pl/multi-tenant' }
+          ]
+        },
+        {
+          text: 'Integracja MCP',
+          items: [
+            { text: 'Integracja MCP', link: '/pl/mcp-integration' },
+            { text: 'Przewodnik integracji MCP', link: '/pl/mcp-integration-guide' },
+            { text: 'Struktura nazewnictwa MCP', link: '/pl/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'Architektura agentów AI',
+          items: [
+            { text: 'Agenci główni', link: '/pl/agents-master' },
+            { text: 'Zespoły specjalistów', link: '/pl/agents-specialist-teams' },
+            { text: 'Agenci wyspecjalizowani', link: '/pl/agents-specialized' }
+          ]
+        },
+        {
+          text: 'Rozwój i użycie',
+          items: [
+            { text: 'Referencja CLI', link: '/pl/cli-reference' },
+            { text: 'Przewodnik rozwoju', link: '/pl/development-guide' },
+            { text: 'Docker', link: '/pl/docker' }
+          ]
+        }
+      ],
+      '/pl/development-guide': [
+        {
+          text: 'Zrozumienie systemu',
+          items: [
+            { text: 'Zacznij tutaj', link: '/pl/start-here' },
+            { text: 'Przegląd systemu', link: '/pl/system-overview' }
+          ]
+        },
+        {
+          text: 'Infrastruktura podstawowa',
+          items: [
+            { text: 'Schemat bazy danych', link: '/pl/database-schema' },
+            { text: 'Architektura wielodostępowa', link: '/pl/multi-tenant' }
+          ]
+        },
+        {
+          text: 'Integracja MCP',
+          items: [
+            { text: 'Integracja MCP', link: '/pl/mcp-integration' },
+            { text: 'Przewodnik integracji MCP', link: '/pl/mcp-integration-guide' },
+            { text: 'Struktura nazewnictwa MCP', link: '/pl/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'Architektura agentów AI',
+          items: [
+            { text: 'Agenci główni', link: '/pl/agents-master' },
+            { text: 'Zespoły specjalistów', link: '/pl/agents-specialist-teams' },
+            { text: 'Agenci wyspecjalizowani', link: '/pl/agents-specialized' }
+          ]
+        },
+        {
+          text: 'Rozwój i użycie',
+          items: [
+            { text: 'Referencja CLI', link: '/pl/cli-reference' },
+            { text: 'Przewodnik rozwoju', link: '/pl/development-guide' },
+            { text: 'Docker', link: '/pl/docker' }
+          ]
+        }
+      ],
+      '/pl/docker': [
         {
           text: 'Zrozumienie systemu',
           items: [
