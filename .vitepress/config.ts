@@ -54,19 +54,112 @@ export default defineConfig({
     
     // Sidebar configuration - comprehensive for all pages
     // Using function to have precise control over matching
-    sidebar: (ctx) => {
-      // VitePress passes path in different formats - normalize it
-      let path = ctx.pathname || ctx.path || ''
-      // Remove .html extension if present
-      path = path.replace(/\.html$/, '')
-      // Ensure leading slash
-      if (!path.startsWith('/')) {
-        path = '/' + path
-      }
-      // Remove trailing slash except for root
-      if (path !== '/' && path.endsWith('/')) {
-        path = path.slice(0, -1)
-      }
+    sidebar: {
+      // Documentation pages - full navigation
+      '/start-here': [
+        {
+          text: 'Understanding the System',
+          items: [
+            { text: 'Start Here', link: '/start-here' },
+            { text: 'System Overview', link: '/system-overview' }
+          ]
+        },
+        {
+          text: 'Core Infrastructure',
+          items: [
+            { text: 'Database Schema', link: '/database-schema' },
+            { text: 'Multi-Tenant Architecture', link: '/multi-tenant' }
+          ]
+        },
+        {
+          text: 'MCP Integration',
+          items: [
+            { text: 'MCP Integration', link: '/mcp-integration' },
+            { text: 'MCP Integration Guide', link: '/mcp-integration-guide' },
+            { text: 'MCP Naming Structure', link: '/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'AI Agents Architecture',
+          items: [
+            { text: 'Master Agents', link: '/agents-master' },
+            { text: 'Specialist Teams', link: '/agents-specialist-teams' },
+            { text: 'Specialized Agents', link: '/agents-specialized' }
+          ]
+        },
+        {
+          text: 'Development & Usage',
+          items: [
+            { text: 'CLI Reference', link: '/cli-reference' },
+            { text: 'Development Guide', link: '/development-guide' },
+            { text: 'Docker', link: '/docker' }
+          ]
+        }
+      ],
+      // Home page - Getting Started section
+      '/': [
+        {
+          text: 'Getting Started',
+          items: [
+            { text: 'Introduction', link: '/intro' },
+            { text: 'Business Context', link: '/business-context' },
+            { text: 'Getting Started Guide', link: '/getting-started' }
+          ]
+        }
+      ],
+      // Polish documentation pages
+      '/pl/start-here': [
+        {
+          text: 'Zrozumienie systemu',
+          items: [
+            { text: 'Zacznij tutaj', link: '/pl/start-here' },
+            { text: 'Przegląd systemu', link: '/pl/system-overview' }
+          ]
+        },
+        {
+          text: 'Infrastruktura podstawowa',
+          items: [
+            { text: 'Schemat bazy danych', link: '/pl/database-schema' },
+            { text: 'Architektura wielodostępowa', link: '/pl/multi-tenant' }
+          ]
+        },
+        {
+          text: 'Integracja MCP',
+          items: [
+            { text: 'Integracja MCP', link: '/pl/mcp-integration' },
+            { text: 'Przewodnik integracji MCP', link: '/pl/mcp-integration-guide' },
+            { text: 'Struktura nazewnictwa MCP', link: '/pl/mcp-naming-structure' }
+          ]
+        },
+        {
+          text: 'Architektura agentów AI',
+          items: [
+            { text: 'Agenci główni', link: '/pl/agents-master' },
+            { text: 'Zespoły specjalistów', link: '/pl/agents-specialist-teams' },
+            { text: 'Agenci wyspecjalizowani', link: '/pl/agents-specialized' }
+          ]
+        },
+        {
+          text: 'Rozwój i użycie',
+          items: [
+            { text: 'Referencja CLI', link: '/pl/cli-reference' },
+            { text: 'Przewodnik rozwoju', link: '/pl/development-guide' },
+            { text: 'Docker', link: '/pl/docker' }
+          ]
+        }
+      ],
+      // Polish home page
+      '/pl/': [
+        {
+          text: 'Pierwsze kroki',
+          items: [
+            { text: 'Wprowadzenie', link: '/pl/intro' },
+            { text: 'Kontekst biznesowy', link: '/pl/business-context' },
+            { text: 'Przewodnik startowy', link: '/pl/getting-started' }
+          ]
+        }
+      ]
+    },
       
       // Documentation sidebar - full navigation
       const docSidebar = [
