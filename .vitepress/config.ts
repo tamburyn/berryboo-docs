@@ -106,6 +106,18 @@ export default defineConfig({
           ]
         }
       ],
+      // Home page - Getting Started section (only for root /)
+      // Must come AFTER specific routes to avoid matching
+      '/': [
+        {
+          text: 'Getting Started',
+          items: [
+            { text: 'Introduction', link: '/intro' },
+            { text: 'Business Context', link: '/business-context' },
+            { text: 'Getting Started Guide', link: '/getting-started' }
+          ]
+        }
+      ],
       '/system-overview': [
         {
           text: 'Understanding the System',
