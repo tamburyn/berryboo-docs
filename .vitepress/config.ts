@@ -5,8 +5,9 @@ export default defineConfig({
   description: 'Advanced multi-agent AI system for e-commerce analytics and recommendations',
   
   // Build configuration for GitHub Pages
-  // Use process.env.NODE_ENV to detect dev vs build
-  base: process.env.NODE_ENV === 'production' ? '/berryboo-docs/' : '/',
+  // Base path: empty for dev, /berryboo-docs/ for production builds
+  // VitePress sets base to empty in dev mode automatically, but we need to ensure it
+  base: process.env.VITEPRESS_BASE || (process.env.NODE_ENV === 'production' ? '/berryboo-docs/' : '/'),
   outDir: './dist',
   
   // Ignore dead links for now (some files don't exist yet)
