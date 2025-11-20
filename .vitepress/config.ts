@@ -55,7 +55,7 @@ export default defineConfig({
     // Sidebar configuration - comprehensive for all pages
     // Using function to have precise control over matching
     sidebar: (ctx) => {
-      const { path } = ctx
+      const path = ctx.pathname || ctx.path || ''
       
       // Documentation sidebar - full navigation
       const docSidebar = [
