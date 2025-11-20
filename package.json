@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build",
+    "build": "NODE_ENV=production vitepress build",
     "build:all": "node scripts/build-all.js",
     "preview": "vitepress preview"
   },

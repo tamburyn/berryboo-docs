@@ -5,7 +5,8 @@ export default defineConfig({
   description: 'Advanced multi-agent AI system for e-commerce analytics and recommendations',
   
   // Build configuration for GitHub Pages
-  base: '/berryboo-docs/',
+  // Use process.env.NODE_ENV to detect dev vs build
+  base: process.env.NODE_ENV === 'production' ? '/berryboo-docs/' : '/',
   outDir: './dist',
   
   // Ignore dead links for now (some files don't exist yet)
