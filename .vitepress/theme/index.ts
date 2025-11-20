@@ -7,7 +7,7 @@ export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      'nav-bar-title-after': () => h(LanguageSwitcher),
+      'nav-bar-content-after': () => h(LanguageSwitcher),
       'sidebar-nav-after': () => h('div', { class: 'outline-container' })
     })
   },

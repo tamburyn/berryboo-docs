@@ -55,7 +55,7 @@ const isActive = (code) => {
   display: inline-flex;
   gap: 4px;
   align-items: center;
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .lang-link {
