@@ -72,8 +72,7 @@ Expert recommendations delivered in clear, business-friendly language with prior
 ### 🔒 Secure & Scalable
 Multi-tenant architecture ensures complete data isolation while supporting unlimited client shops.
 
-### ⚡ Fast Processing
-Optimized for 83-90% faster processing (30min → 3-6min per anomaly) with smart routing and parallel execution.
+
 
 ---
 

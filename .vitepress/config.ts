@@ -14,6 +14,7 @@ export default defineConfig({
   ignoreDeadLinks: true,
 
   // Source directory - English content (root locale)
+  // Note: VitePress locales share the same srcDir, Polish content accessed via /pl/ paths
   srcDir: './en',
 
   // Internationalization - proper setup for bilingual support
@@ -50,7 +51,6 @@ export default defineConfig({
     pl: {
       label: 'Polski',
       lang: 'pl',
-      srcDir: './pl',
       themeConfig: {
         nav: [
           { text: 'Strona główna', link: '/pl/' },
