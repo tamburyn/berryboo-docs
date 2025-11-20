@@ -207,10 +207,8 @@ export default defineConfig({
       }
     },
 
-    // Social links
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com' }
-    ],
+    // Social links - removed GitHub icon
+    socialLinks: [],
 
     // Footer
     footer: {
