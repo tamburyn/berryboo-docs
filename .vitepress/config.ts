@@ -55,7 +55,18 @@ export default defineConfig({
     // Sidebar configuration - comprehensive for all pages
     // Using function to have precise control over matching
     sidebar: (ctx) => {
-      const path = ctx.pathname || ctx.path || ''
+      // VitePress passes path in different formats - normalize it
+      let path = ctx.pathname || ctx.path || ''
+      // Remove .html extension if present
+      path = path.replace(/\.html$/, '')
+      // Ensure leading slash
+      if (!path.startsWith('/')) {
+        path = '/' + path
+      }
+      // Remove trailing slash except for root
+      if (path !== '/' && path.endsWith('/')) {
+        path = path.slice(0, -1)
+      }
       
       // Documentation sidebar - full navigation
       const docSidebar = [
