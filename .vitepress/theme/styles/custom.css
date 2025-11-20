@@ -239,10 +239,13 @@
   gap: 4px;
 }
 
-/* Hide VitePress default language switcher button */
+/* Hide VitePress default language switcher button and dropdown */
 button[aria-label="Change language"],
 .vp-nav-locales,
-.vp-locales-menu {
+.vp-locales-menu,
+.VPFlyout.VPNavBarTranslations,
+.translations,
+[class*="VPNavBarTranslations"] {
   display: none !important;
 }
 
