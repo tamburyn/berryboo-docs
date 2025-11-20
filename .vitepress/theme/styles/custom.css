@@ -227,18 +227,16 @@
   border-bottom: 1px solid var(--vp-c-border);
 }
 
-/* Language switcher positioning - next to dark mode toggle */
+/* Language switcher positioning - in place of GitHub icon */
 .vp-nav-bar-content-after {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  display: none; /* Hide from content area */
 }
 
-/* Ensure language switcher appears right before dark mode toggle */
-.vp-nav-bar-content-after .language-switcher {
-  order: -1;
-  margin-left: 0;
-  margin-right: 0;
+/* Language switcher in social links area (where GitHub was) */
+.vp-nav-social-after {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 /* Buttons */

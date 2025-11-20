@@ -8,6 +8,7 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       'nav-bar-content-after': () => h(LanguageSwitcher),
+      'nav-social-after': () => h(LanguageSwitcher),
       'sidebar-nav-after': () => h('div', { class: 'outline-container' })
     })
   },
