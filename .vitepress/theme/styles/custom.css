@@ -1,0 +1,243 @@
+/**
+ * Notion-inspired custom styles
+ */
+
+@import './vars.css';
+
+/* Typography - Notion-like */
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Main content area */
+.vp-doc {
+  max-width: 900px;
+  padding: 32px 48px;
+}
+
+/* Headings */
+.vp-doc h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--vp-c-border);
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: var(--vp-c-text-1);
+}
+
+/* Paragraphs */
+.vp-doc p {
+  margin-bottom: 16px;
+  color: var(--vp-c-text-1);
+}
+
+/* Lists */
+.vp-doc ul,
+.vp-doc ol {
+  margin-bottom: 16px;
+  padding-left: 24px;
+}
+
+.vp-doc li {
+  margin-bottom: 8px;
+  color: var(--vp-c-text-1);
+}
+
+/* Links */
+.vp-doc a {
+  color: var(--vp-c-brand);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.vp-doc a:hover {
+  border-bottom-color: var(--vp-c-brand);
+}
+
+/* Code blocks */
+.vp-doc pre {
+  background-color: var(--vp-code-block-bg);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 6px;
+  padding: 16px;
+  margin: 24px 0;
+  overflow-x: auto;
+}
+
+.vp-doc code {
+  background-color: var(--vp-c-bg-code);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Blockquotes */
+.vp-doc blockquote {
+  border-left: 3px solid var(--vp-c-brand);
+  padding-left: 16px;
+  margin: 24px 0;
+  color: var(--vp-c-text-2);
+  font-style: italic;
+}
+
+/* Tables */
+.vp-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+}
+
+.vp-doc th,
+.vp-doc td {
+  border: 1px solid var(--vp-c-border);
+  padding: 12px;
+  text-align: left;
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-alt);
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+/* Sidebar */
+.vp-sidebar {
+  background-color: var(--vp-c-bg-alt);
+  border-right: 1px solid var(--vp-c-border);
+}
+
+.vp-sidebar-item {
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin: 2px 0;
+  transition: background-color 0.2s ease;
+}
+
+.vp-sidebar-item:hover {
+  background-color: var(--vp-c-bg-soft);
+}
+
+.vp-sidebar-item.active {
+  background-color: var(--vp-c-bg-soft);
+  color: var(--vp-c-brand);
+}
+
+/* Navbar */
+.vp-nav {
+  background-color: var(--vp-c-bg);
+  border-bottom: 1px solid var(--vp-c-border);
+}
+
+/* Buttons */
+.vp-button {
+  background-color: var(--vp-c-brand);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.vp-button:hover {
+  background-color: var(--vp-c-brand-dark);
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 64px 24px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: var(--vp-c-text-2);
+  margin-bottom: 32px;
+}
+
+/* Language switcher */
+.language-switcher {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.language-switcher a {
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.language-switcher a:hover {
+  background-color: var(--vp-c-bg-soft);
+}
+
+.language-switcher a.active {
+  background-color: var(--vp-c-brand);
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vp-doc {
+    padding: 24px 16px;
+  }
+  
+  .vp-doc h1 {
+    font-size: 32px;
+  }
+  
+  .vp-doc h2 {
+    font-size: 24px;
+  }
+}

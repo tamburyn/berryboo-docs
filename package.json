@@ -1,0 +1,17 @@
+{
+  "name": "berryboo-docs",
+  "version": "1.0.0",
+  "description": "BerryBoo AI Documentation - Bilingual Knowledge Base",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "build:all": "node scripts/build-all.js",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.1.0",
+    "vue": "^3.4.0"
+  }
+}
+
