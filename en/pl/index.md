@@ -72,8 +72,6 @@ Eksperckie rekomendacje dostarczane w jasnym, przyjaznym dla biznesu języku z p
 ### 🔒 Bezpieczne i skalowalne
 Architektura wielodostępowa zapewnia pełną izolację danych przy jednoczesnym wsparciu nieograniczonej liczby sklepów klientów.
 
-### ⚡ Szybkie przetwarzanie
-Zoptymalizowane dla 83-90% szybszego przetwarzania (30min → 3-6min na anomalie) z inteligentnym routingiem i równoległym wykonywaniem.
 
 ---
 
