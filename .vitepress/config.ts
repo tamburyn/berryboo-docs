@@ -23,28 +23,11 @@ export default defineConfig({
       label: 'English',
       lang: 'en',
       themeConfig: {
-        // Navigation - expanded with all sections
+        // Navigation - Documentation links to Start Here page
         nav: [
           { text: 'Home', link: '/' },
           { text: 'Introduction', link: '/intro' },
-          { 
-            text: 'Documentation',
-            items: [
-              { text: 'Start Here', link: '/start-here' },
-              { text: 'System Overview', link: '/system-overview' },
-              { text: 'Database Schema', link: '/database-schema' },
-              { text: 'Multi-Tenant', link: '/multi-tenant' },
-              { text: 'MCP Integration', link: '/mcp-integration' },
-              { text: 'MCP Integration Guide', link: '/mcp-integration-guide' },
-              { text: 'MCP Naming Structure', link: '/mcp-naming-structure' },
-              { text: 'Master Agents', link: '/agents-master' },
-              { text: 'Specialist Teams', link: '/agents-specialist-teams' },
-              { text: 'Specialized Agents', link: '/agents-specialized' },
-              { text: 'CLI Reference', link: '/cli-reference' },
-              { text: 'Development Guide', link: '/development-guide' },
-              { text: 'Docker', link: '/docker' }
-            ]
-          }
+          { text: 'Documentation', link: '/start-here' }
         ]
       }
     },
@@ -55,24 +38,7 @@ export default defineConfig({
         nav: [
           { text: 'Strona główna', link: '/pl/' },
           { text: 'Wprowadzenie', link: '/pl/intro' },
-          { 
-            text: 'Dokumentacja',
-            items: [
-              { text: 'Zacznij tutaj', link: '/pl/start-here' },
-              { text: 'Przegląd systemu', link: '/pl/system-overview' },
-              { text: 'Schemat bazy danych', link: '/pl/database-schema' },
-              { text: 'Architektura wielodostępowa', link: '/pl/multi-tenant' },
-              { text: 'Integracja MCP', link: '/pl/mcp-integration' },
-              { text: 'Przewodnik integracji MCP', link: '/pl/mcp-integration-guide' },
-              { text: 'Struktura nazewnictwa MCP', link: '/pl/mcp-naming-structure' },
-              { text: 'Agenci główni', link: '/pl/agents-master' },
-              { text: 'Zespoły specjalistów', link: '/pl/agents-specialist-teams' },
-              { text: 'Agenci wyspecjalizowani', link: '/pl/agents-specialized' },
-              { text: 'Referencja CLI', link: '/pl/cli-reference' },
-              { text: 'Przewodnik rozwoju', link: '/pl/development-guide' },
-              { text: 'Docker', link: '/pl/docker' }
-            ]
-          }
+          { text: 'Dokumentacja', link: '/pl/start-here' }
         ]
       }
     }
