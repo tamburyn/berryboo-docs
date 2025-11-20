@@ -158,160 +158,33 @@ export default defineConfig({
             { text: 'Przewodnik startowy', link: '/pl/getting-started' }
           ]
         }
-      ]
-    },
-      
-      // Documentation sidebar - full navigation
-      const docSidebar = [
-        {
-          text: 'Understanding the System',
-          items: [
-            { text: 'Start Here', link: '/start-here' },
-            { text: 'System Overview', link: '/system-overview' }
-          ]
-        },
-        {
-          text: 'Core Infrastructure',
-          items: [
-            { text: 'Database Schema', link: '/database-schema' },
-            { text: 'Multi-Tenant Architecture', link: '/multi-tenant' }
-          ]
-        },
-        {
-          text: 'MCP Integration',
-          items: [
-            { text: 'MCP Integration', link: '/mcp-integration' },
-            { text: 'MCP Integration Guide', link: '/mcp-integration-guide' },
-            { text: 'MCP Naming Structure', link: '/mcp-naming-structure' }
-          ]
-        },
-        {
-          text: 'AI Agents Architecture',
-          items: [
-            { text: 'Master Agents', link: '/agents-master' },
-            { text: 'Specialist Teams', link: '/agents-specialist-teams' },
-            { text: 'Specialized Agents', link: '/agents-specialized' }
-          ]
-        },
-        {
-          text: 'Development & Usage',
-          items: [
-            { text: 'CLI Reference', link: '/cli-reference' },
-            { text: 'Development Guide', link: '/development-guide' },
-            { text: 'Docker', link: '/docker' }
-          ]
-        }
-      ]
-      
-      // Polish documentation sidebar
-      const plDocSidebar = [
-        {
-          text: 'Zrozumienie systemu',
-          items: [
-            { text: 'Zacznij tutaj', link: '/pl/start-here' },
-            { text: 'Przegląd systemu', link: '/pl/system-overview' }
-          ]
-        },
-        {
-          text: 'Infrastruktura podstawowa',
-          items: [
-            { text: 'Schemat bazy danych', link: '/pl/database-schema' },
-            { text: 'Architektura wielodostępowa', link: '/pl/multi-tenant' }
-          ]
-        },
-        {
-          text: 'Integracja MCP',
-          items: [
-            { text: 'Integracja MCP', link: '/pl/mcp-integration' },
-            { text: 'Przewodnik integracji MCP', link: '/pl/mcp-integration-guide' },
-            { text: 'Struktura nazewnictwa MCP', link: '/pl/mcp-naming-structure' }
-          ]
-        },
-        {
-          text: 'Architektura agentów AI',
-          items: [
-            { text: 'Agenci główni', link: '/pl/agents-master' },
-            { text: 'Zespoły specjalistów', link: '/pl/agents-specialist-teams' },
-            { text: 'Agenci wyspecjalizowani', link: '/pl/agents-specialized' }
-          ]
-        },
-        {
-          text: 'Rozwój i użycie',
-          items: [
-            { text: 'Referencja CLI', link: '/pl/cli-reference' },
-            { text: 'Przewodnik rozwoju', link: '/pl/development-guide' },
-            { text: 'Docker', link: '/pl/docker' }
-          ]
-        }
-      ]
-      
-      // Check for documentation pages first
-      // Use startsWith for better matching (handles /start-here.html, /start-here/, etc.)
-      const isDocPage = path.startsWith('/start-here') || 
-                       path.startsWith('/system-overview') ||
-                       path.startsWith('/database-schema') ||
-                       path.startsWith('/multi-tenant') ||
-                       path.startsWith('/mcp-integration') ||
-                       path.startsWith('/mcp-integration-guide') ||
-                       path.startsWith('/mcp-naming-structure') ||
-                       path.startsWith('/agents-master') ||
-                       path.startsWith('/agents-specialist-teams') ||
-                       path.startsWith('/agents-specialized') ||
-                       path.startsWith('/cli-reference') ||
-                       path.startsWith('/development-guide') ||
-                       path.startsWith('/docker')
-      
-      const isPlDocPage = path.startsWith('/pl/start-here') ||
-                          path.startsWith('/pl/system-overview') ||
-                          path.startsWith('/pl/database-schema') ||
-                          path.startsWith('/pl/multi-tenant') ||
-                          path.startsWith('/pl/mcp-integration') ||
-                          path.startsWith('/pl/mcp-integration-guide') ||
-                          path.startsWith('/pl/mcp-naming-structure') ||
-                          path.startsWith('/pl/agents-master') ||
-                          path.startsWith('/pl/agents-specialist-teams') ||
-                          path.startsWith('/pl/agents-specialized') ||
-                          path.startsWith('/pl/cli-reference') ||
-                          path.startsWith('/pl/development-guide') ||
-                          path.startsWith('/pl/docker')
-      
-      if (isPlDocPage) {
-        return plDocSidebar
-      }
-      
-      if (isDocPage) {
-        return docSidebar
-      }
-      
-      // Home pages - Getting Started section
-      if (path === '/' || path === '/index' || path === '/index.html') {
-        return [
-          {
-            text: 'Getting Started',
-            items: [
-              { text: 'Introduction', link: '/intro' },
-              { text: 'Business Context', link: '/business-context' },
-              { text: 'Getting Started Guide', link: '/getting-started' }
-            ]
-          }
-        ]
-      }
-      
-      if (path === '/pl' || path === '/pl/' || path === '/pl/index' || path === '/pl/index.html') {
-        return [
-          {
-            text: 'Pierwsze kroki',
-            items: [
-              { text: 'Wprowadzenie', link: '/pl/intro' },
-              { text: 'Kontekst biznesowy', link: '/pl/business-context' },
-              { text: 'Przewodnik startowy', link: '/pl/getting-started' }
-            ]
-          }
-        ]
-      }
-      
-      // Default: return documentation sidebar
-      return docSidebar
+      ],
+      // Add all other documentation pages with same sidebar
+      '/system-overview': '/start-here',
+      '/database-schema': '/start-here',
+      '/multi-tenant': '/start-here',
+      '/mcp-integration': '/start-here',
+      '/mcp-integration-guide': '/start-here',
+      '/mcp-naming-structure': '/start-here',
+      '/agents-master': '/start-here',
+      '/agents-specialist-teams': '/start-here',
+      '/agents-specialized': '/start-here',
+      '/cli-reference': '/start-here',
+      '/development-guide': '/start-here',
+      '/docker': '/start-here',
+      // Polish pages
+      '/pl/system-overview': '/pl/start-here',
+      '/pl/database-schema': '/pl/start-here',
+      '/pl/multi-tenant': '/pl/start-here',
+      '/pl/mcp-integration': '/pl/start-here',
+      '/pl/mcp-integration-guide': '/pl/start-here',
+      '/pl/mcp-naming-structure': '/pl/start-here',
+      '/pl/agents-master': '/pl/start-here',
+      '/pl/agents-specialist-teams': '/pl/start-here',
+      '/pl/agents-specialized': '/pl/start-here',
+      '/pl/cli-reference': '/pl/start-here',
+      '/pl/development-guide': '/pl/start-here',
+      '/pl/docker': '/pl/start-here'
     },
     search: {
       provider: 'local',
