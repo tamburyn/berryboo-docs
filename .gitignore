@@ -4,4 +4,4 @@ dist
 *.log
 .vitepress/cache
 .vitepress/dist
-
+en/pl/
