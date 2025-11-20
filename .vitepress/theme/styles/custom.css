@@ -239,6 +239,13 @@
   gap: 4px;
 }
 
+/* Hide VitePress default language switcher button */
+button[aria-label="Change language"],
+.vp-nav-locales,
+.vp-locales-menu {
+  display: none !important;
+}
+
 /* Buttons */
 .vp-button {
   background-color: var(--vp-c-brand);
